@@ -1,0 +1,55 @@
+li = [2,2,2,2]
+li1= [3,1,2,3]
+li1.sort()
+#print(li[1])
+
+
+minimum = 0
+for i in range(0,1):
+  #print(i)
+  li = list()
+  #print(len(effort))
+  for j in range(0,len(effort)):
+    #print(j, i )
+    li.append(effort[j][i])
+  #print(min(li))
+  #print(">>>>>>>><<<<<<<<<<<")
+  minimum = minimum + min(li)
+  series = li.index(min(li))
+  #print(series)
+
+for i in range(1,len(effort[0])):
+  li = list()
+  for j in range(len(effort)):
+    li.append(effort[j][i])
+  #print(li)
+  if series != li.index(min(li)):
+    minimum = minimum + min(li)
+    series = li.index(min(li))
+  else:
+    li.sort()
+    #print(li)
+    minimum = minimum + li[1]
+    series = li.index(li[1])
+print(minimum,end ="\n")
+
+'''
+
+if effort[0][0] > effort[1][0]:
+  minimum = minimum + effort[1][0]
+  series = 1
+else:
+  minimum = minimum + effort[0][0]
+  series = 0  
+#print(minimum)
+#print(series)
+
+for i in range(1,len(effort[0])):
+  if series == 1:
+    minimum = minimum + effort[0][i]
+    series =0
+  else:
+    minimum = minimum + effort[1][i]
+    series =1
+print(minimum,end ="\n")
+'''

@@ -1,0 +1,25 @@
+==================================================================================================================================
+VISUAL STUDIO TOOLS COMMAND
+===================================================================================================================================
+1) ctrl+ shift + p ==> command pallete and escape ( esc) to come out
+1) ctrl+ shift + n ==> new window file
+2) ctrl+ Shift + i ==> format code 
+2) ctrl + shift + t ==> open up recently closed window 
+ 
+3) ctrl + n ==> new file 
+3) ctrl + w ==> close the active window
+4) ctrl + s ==> save file 
+) ctrl + o ==> open file/folder
+5) ctrl + +/- ==> zoom in / zoom out
+6) ctrl + z/y ==> undo / redo
+7) Ctrl + c/v/x ==> copy/paste/cut
+7) ctrl + tab ==> navigate in tab  
+7) window + tab ==> navigate in application 
+
+8) ctrl +, ==> open up setting 
+9) ctrl + ` ==> open up terminal
+10)ctrl + b ==> open up side bar 
+11)ctrl + d ==> select the word
+
+12) code - ==> to relaunch the vs code with current file
+==================================================================================================================================

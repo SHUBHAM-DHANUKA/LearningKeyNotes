@@ -1,0 +1,28 @@
+git init
+git add -A
+git commit -m 'Added my project'
+
+git remote add origin git@github.com:scotch-io/my-new-project.git
+git remote -v => To check which remote url added
+
+
+if u wanna go with master branch go with it:-
+	git push -f origin master
+else create a branch then push back the code:-
+	git branch branch_name
+	git push -f origin branch_name
+
+
+To ensure you have all update while you worked on locally.(if you are unable to add it) 
+git pull --rebase origin master
+
+To pull data:
+git pull 
+
+Note: There is no need to worry because it does not delete anything and show the diff whereever the changes was done.
+Some terminology:-
+updated
+stashed
+staged and unstaged
+
+

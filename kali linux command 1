@@ -1,0 +1,107 @@
+apt-get install
+
+apt-get update
+
+apt-get upgrade
+
+apt-get remove
+
+apt-get purge
+
+apt-get clean
+
+apt-get autoclean
+
+apt-get autoremove
+
+
+============================================
+
+dpkg -i : Debian based package installation
+
+
+dpkg --configure -a  : for show you pakcage that is not install complete
+
+dpkg --remove : for removing any broken package 
+
+yum : fedora based package installation
+
+tar -xvjf/ -xvzf used for unarchieve(extract  file)
+
+add-apt repository -y ppa: for adding repository
+=========================================
+unzip is used for unzip any zip file
+
+
+============================================
+grep is used for search 
+
+touch is used for create a file
+
+cat is used for concatination (display content in file)
+
+echo is used for insertion 
+
+mv is used for move
+
+cp is used for copy 
+
+cd is used for change Driectory 
+
+cd .. is used for come our from that directory 
+
+mkdir 
+
+rmdir -r : remove recursive file with in a folder 
+
+li -l : list out the content of that file with permissioin  details
+
+chmod +x for changing permission
+================================================
+
+/etc/apt/sources.list: for adding kali repository
+
+/etc/passwd : password file
+
+/var/www/html: for local host webserver file
+
+/var/log/ : for system and appliction log
+
+
+===============================================
+- is used for add functionality
+-- is used for specific execute that function
+
+===================================================
+--help : used for asking specific help purpose
+
+-v is used for verbose
+
+-r : for recursive 
+
+-a : for hidden file 
+-f for force 
+
+======================================================
+localhost service run command
+
+
+===========================================
+wget for getting package 
+
+curl  for establishing http connection
+
+ssh for establishing ssh connection
+
+telnet for 
+
+
+
+=====================================================
+all existing user
+
+awk -F':' '{ print $1}' /etc/passwd
+===========================================
+
+
+

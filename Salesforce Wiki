@@ -1,0 +1,221 @@
+User:-
+setup-->users
+
+profile:-
+setup--> profile
+
+permission set:-
+setup --> permission set
+
+Role:-
+setup ---> role
+
+Public Group:-
+Setup ---> public group
+
+sharing setting:
+setup --> sharing setting
+
+Chatter:
+setup--> chatter
+
+Approval:
+Setup --> approval 
+
+==================================================
+
+Automated case managment
+1) route case    ( queue the case  ) 
+2) assign case automatically (assignment rule)
+3) respond to customer automatically ( auto response)
+4) escalate case
+
+Case Queue:
+setup --> queue
+
+Assignment rule:
+setup --> case assignment rule
+
+autoresponse
+setup --> case autoresponse
+
+escalation:
+setup --> escalation 
+
+for creating different channel of case:
+web to case 
+email to case
+
+
+
+===================================================
+
+Network Access:
+Setup --> network access
+setup --> profile --> ip range 
+
+Login Hours:
+Setup--> profile --> login hours
+
+object/ field level security:
+setup --> profile --> object/field
+
+domain:
+setup --> my domain
+
+
+single sign on :
+setup--> single
+======================================================
+Security:
+1) organization wise 
+2) object 
+3) field 
+4) record
+
+==========================================================
+
+Organzation wise security:
+1) Restricted the ip address ( region wise) 
+
+2) User : - Unique identifier with session (UID)
+
+3) Two factor authentication (password, pin)
+
+4) use:- (who can see what, who can do what)
+
+5) limit login hours ( login item)
+
+6) TLS:- transport layer security( encryption of information)
+
+
+
+=======================================================
+
+Home page
+App page 
+record page 
+
+Lightning page 
+compact layout 
+record type
+
+Home Page    Record type  PageLayout  Compact Layout
+App Page                  Edit Page
+Record Page
+
+=======================================================
+for importing:
+setup --> import
+
+for exporting:
+setup-->export
+
+for fileS:
+setup --> files
+
+for email templates:
+setup--> email template 
+
+for letterhead:
+setup--> letterhead
+
+=====================================================
+API:
+Username
+Password
+Token (Personal Information setup)
+=======================================================
+Relation:
+Lookup 1 to 1
+Master 1 to n
+Juntion n to n
+
+Relation establish: from Detail object to  Master 
+Rollup Summary also comes from details 2 master 
+
+-------------------------------------------------------- 
+Userinterface
+
+((Webservice API)) 
+
+Backend code
+
+((Metadata API))
+
+Database
+--------------------------------------------------------
+Depeneded picklist ( Field Dependencey ) ( Object Manager => field and relationship ==> depended field)
+Accordian :
+Field Tracking 
+========================================================================================================================= 
+Infromation      -------------------------------Knowledge-------------------------------	 IQ 
+Entry 		 One Object field Updated   Different object updated  		   Assign        View 
+Filter           rollup summary             Worlflow, (TW),process builder         Assingment    Profile, permission, 
+Validation rule  formula field              flow Builder(ScreenFlow, LC)           Approval  	 role, group, sharing
+                                            Trigger  
+
+Validation rule will pop up when condition is true
+==========================================================================================================================
+Workflow, TimeBased Workflow, Process Builder 
+-------------------------------------
+Flow Builder (Screen flow, Lightning Component)
+------------------------------------ 
+Trigger 
+------------------------------------
+UI ==>     					Backend ==>              		               Database==>               
+UserEntry  					For if Step(assignment)  		               CRUD ops
+
+Somechanges on   				Evaluate Crieteria                                     Update it or take action 
+any object (Somthing happen)   			( Mapping condition/ take a look at situation)         ( action )
+						(Risk identification for that object/ filteration )
+
+Variable (Manager(premitive, non premitive) ) 
+============================================================================================================================
+
+Approval 
+1) On Which Object
+2) Who is Submitting
+3) (Approval Steps) ( Criteria ) If condition where this request should go
+4) Who is Approving (intial steps of action)
+   1) What he is able to see
+   2) What he need to do
+5) (Final approval)
+6) (Final Rejection) 
+7) (recall)
+=============================================================
+Assigning :
+
+1) (Not Assigning) if condition to check whehter he/ she is right person to check  
+			Not assigning ( // Not able to call function ) 
+
+2) Not read and Write permission
+
+3) Not visible to other person
+
+=============================================================================================================================
+
+1) debug log
+2) System log
+=============================================================================================================================
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
