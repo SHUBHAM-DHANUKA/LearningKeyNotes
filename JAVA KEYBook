@@ -1,0 +1,257 @@
+import java.util.*;
+public class JavaLearningClass {
+
+	public static void main(String[] args) {
+    //comment
+    /* comment is the world */
+    // print 
+    System.out.println("Hello son");
+    
+    // Premitive data type 
+    Integer j = 1;
+    String s = "Shubham";
+    char c = 't';
+    Double d = 12.0;
+    Float f = 12.0f;
+    System.out.println(j);
+    System.out.println(s);
+    System.out.println(c);
+    System.out.println(d);
+    System.out.println(f);
+    
+    //Loop and if condition 
+    for(Integer i = 0 ; i < s.length();i++) {
+    	if(s.charAt(i) == 'b') {
+    		break;
+    	}
+    	else if (s.charAt(i) == 'u'){	    	
+    		break;
+    	}
+    	else {
+    		System.out.println(s.charAt(i));
+    	}
+    }
+    // while loop
+    Integer s1 = 0;
+    while(s1<5) {
+    	System.out.println(s1);
+    	s1++;
+    }
+    
+    // operator 
+    System.out.println(2+3);
+    System.out.println(2-3);
+    System.out.println(2*3);
+    System.out.println(2/3);
+    System.out.println(2>3);
+    System.out.println(2<3);
+    System.out.println(2 & 3);
+    System.out.println(2 | 3);
+    //System.out.println(2 && 3);
+    //System.out.println(2 || 3);
+    //ternary operator 
+    //System.out.println(2>3?2:3);
+        
+
+    //---------------------------------------------------------------------------------------------||   
+    //Non premitive Data Type
+   // Data type operation Array, List, Map string operation 
+    
+    //Array
+	Integer[] ia = { 1, 2, 3, 4, 5 };
+    Double[] da = { 1.1, 2.2, 3.3, 4.4 };
+    Character[] ca = { 'H', 'E', 'L', 'L', 'O' };
+    System.out.println(ia[0]);
+    System.out.println(da[1]);
+    System.out.println(ca[2]);
+    
+    Integer[] de = new Integer[2];
+    System.out.println(de.length);
+    de[0] =1;
+    //de[2] =2;
+    //de[3] =3;
+    System.out.println(de[0]);
+    
+    //Integer[] do1;
+    String s01 = null;
+    s01 = "Shubham hello boss";
+    System.out.println(s01);
+    
+    //Array List
+    ArrayList<String> al = new ArrayList<String>();
+    al.add("Shubham");
+    al.add("Shubham");
+    List<ArrayList<String>> al3 = Arrays.asList(al);
+    System.out.println(al3);
+    
+    al.add("Shubham");
+    al.add("Shubham");
+    al.add("Shubham");
+    System.out.println(al);
+    System.out.println( al.size());
+    al.set(0, "s01");
+    
+    System.out.println(al.get(0));
+    System.out.println(al);
+  
+    al.set(1, "s01");
+    System.out.println(al);  
+    //al.get(0);
+    al.remove(0);
+    System.out.println(al);
+    
+    al.set(0, "s02");
+    System.out.println(al);
+    al.set(1, "s01");
+    System.out.println(al);  
+    System.out.println( al.indexOf("s01"));
+   
+    al.clear();
+    System.out.println(al);
+    //List
+    List<String> li = new ArrayList<String>();
+    li.add("s01");
+    System.out.println(li);
+    List<Integer> li1 = new ArrayList<Integer>();
+    li1.add(1);
+    System.out.println(li1);
+    
+    //string
+          
+    String ZS ="Shubham Dhanuka";
+    System.out.println(ZS.charAt(0));
+    
+    // split and join
+    String[] ZS1=ZS.split("");
+    String newString1 ="";
+    for ( Integer il =0; il<ZS1.length;il++) {
+    	System.out.println(ZS1[il]);
+    	newString1=newString1+ZS1[il];
+    	    	
+    }
+    System.out.println(newString1);
+    String newString ="";
+    newString=String.join("",ZS1);
+    System.out.println(newString);
+     
+    String Sh = "Shubham is a rock solid boy";
+    System.out.println(Sh);
+    String[] sh = Sh.split("");
+    System.out.println(sh[0]);
+    
+    List<String> li2 = Arrays.asList(Sh.split(""));
+    System.out.println(li2);
+    ArrayList<String> li3 =new ArrayList<String>(Arrays.asList(Sh.split("")));
+    System.out.println(li3);
+    System.out.println(li3.size());
+    
+    /*
+    List<String> al2 = Arrays.asList(ZS.split(""));
+    System.out.println(al2);
+      
+    ZS1[0]="d";
+    System.out.println(ZS1[0]);
+  
+    for(Integer ie = 0 ; ie < ZS1.length;ie++) {
+    	 System.out.println(ZS1[ie]); 
+    	
+    }
+    */
+    
+    
+    //List<String> LI = new ArrayList<String>();
+    //map
+    Map<Integer, String> mi = new HashMap<Integer, String>();
+    mi.put(1, "al31");
+    System.out.println(mi.get(1));
+    System.out.println(mi.keySet());
+    System.out.println(mi.values());
+    System.out.println(mi.hashCode());
+
+    mi.clear();
+    System.out.println(mi); 
+    //type and id
+    System.out.println(mi.getClass().getName());
+    System.out.println(mi);
+	
+  
+    
+    // Getter and setter method operation 
+	GetterAndSetter Gs = new GetterAndSetter();
+	Gs.setName("Shubham is the man");
+	System.out.println("GetName:"+Gs.getName());
+
+    // Method with custom defined return type and method
+    class3 c1 = Gs.method();
+    System.out.println(c1.ThisIs);    
+	
+	
+    //---------------------------------------------------------------------------------------------||
+    // Method calling 
+    System.out.println(Method_integer());
+    JavaLearningClass.Array_integer();
+    //Class 
+    //class calling     
+    //class3 c3 = new class3();
+    //c3.main();
+    
+    //inner class calling     
+    //Method1();
+    //System.out.println(Method_String());
+    //JavaLearningClass JLC = new  JavaLearningClass();
+    //class2 c1 = new class2();
+    //c1.inner_Method1();
+    
+
+	}
+	
+    //Method with void   and void return 
+    public void Method1() {
+    	System.out.println("Fuck you");
+    	
+    	}
+    // method with premitive data type and return 
+    public static Integer Method_integer() {
+    	Integer i =10;
+    	return i;
+    }
+     public static String Method_String() {
+    	 String s2 ="Hello";
+    	 System.out.println(s2);
+    	 return s2;
+     }
+ 	// Method with non premitive data type  
+     public static Integer[] Array_integer() {
+     	Integer[] de1 = new Integer[2];
+     	System.out.println("This is the array of integer");
+     	return de1;
+     }
+     // inner class defined
+     public static class class2{
+    	 public void inner_Method1() {
+    		 System.out.println("This is fucking inheritance");
+    	 JavaLearningClass JLC = new  JavaLearningClass();
+    	 JLC.Method1();
+    	 JavaLearningClass.Method_String();
+    	 }
+    	 }
+
+}
+//inheritance
+class class3 extends JavaLearningClass.class2 implements abclass{
+	public String ThisIs;
+public void main() {
+    method_abstract();
+	JavaLearningClass.class2 c1 = new JavaLearningClass.class2();
+    c1.inner_Method1();
+	System.out.println("Hello another class");
+}	
+}
+// abstract, virtual
+
+interface abclass{
+	default void  method_abstract() {
+		System.out.println("good");
+	}
+}
+
