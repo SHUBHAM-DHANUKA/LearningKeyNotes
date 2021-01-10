@@ -1,0 +1,52 @@
+import java.util.*;
+public class knapsack {
+
+	public static void main(String[] args) {
+		 //TODO Auto-generated method stub
+         //System.out.println("Hello");
+		Scanner sc = new Scanner(System.in);
+		System.out.println(repeated());
+	
+	}
+	public static Integer repeated() {
+		//System.out.print("Hello");
+		int weight =8;
+		int object =4;
+		
+		Integer[] profit = new Integer[]{1,2,5,6};
+		Integer[] given_weight = new Integer[]{2,3,4,5};
+		
+		Integer[][] matrix = new Integer[object+1][weight+1];
+		//for 0 object weight profit ==0
+		for(Integer i=0;i<weight+1;i++) {
+			matrix[0][i] =0;
+		}
+		//System.out.println(matrix[0][weight]);
+		
+		// for 0 weight profit object ==0
+		for(Integer i=0;i<object+1;i++) {
+			matrix[i][0] =0;
+		}
+		//System.out.println(matrix[object][0]);
+		
+		for(Integer i=1;i<=object;i++) {
+			for(Integer w=1;w<=weight;w++) {
+					Integer Temp = (w-given_weight[i-1]);
+					//System.out.println(Temp);
+					if(Temp<0) {
+						Temp = w;
+						matrix[i][w]=matrix[i-1][w];
+					}
+					else {
+					matrix[i][w]=Math.max(matrix[i-1][w], matrix[i-1][Temp]+profit[i-1] );
+					}
+					System.out.println(i+ ":"+ w + ":::" +matrix[i][w]);
+		}
+		}
+		//System.out.print(matrix[object][weight]);
+		 System.out.println(Arrays.deepToString(matrix));
+		return matrix[object][weight];
+		
+	}
+
+}
